@@ -22,9 +22,10 @@ CREATE SCHEMA IF NOT EXISTS docente AUTHORIZATION prueba;
 CREATE SCHEMA IF NOT EXISTS sistema AUTHORIZATION prueba;
 CREATE SCHEMA IF NOT EXISTS auditoria AUTHORIZATION prueba;
 CREATE SCHEMA IF NOT EXISTS catalogo AUTHORIZATION prueba;
+CREATE SCHEMA IF NOT EXISTS generales AUTHORIZATION prueba;
 
 
 SET search_path TO
-pg_catalog, public, sesion, estudiante, docente, sistema, auditoria, catalogo;
+pg_catalog, public, sesion, estudiante, docente, sistema, auditoria, catalogo, generales;
 
 GRANT PRIVILEGES ON DATABASE Ignug TO prueba;
