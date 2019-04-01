@@ -1,22 +1,29 @@
 
 exports.seed = function(knex, Promise) {
   return knex.schema.withSchema('catalogo')
-  .alterTable('tipoIdentificaciones', function(t) {
-     t.foreign('idCredencial')
+  .alterTable('tiposIdentificacion', function(t) {
+     t.foreign('idCredencialIngreso')
      .references('id')
      .on('sesion.credenciales')
      .onDelete('RESTRICT')
      .onUpdate('RESTRICT')
   })
-  .alterTable('estadoRegistros', function(t) {
-    t.foreign('idCredencial')
+  .alterTable('estadosRegistro', function(t) {
+    t.foreign('idCredencialIngreso')
     .references('id')
     .on('sesion.credenciales')
     .onDelete('RESTRICT')
     .onUpdate('RESTRICT')
  })
  .alterTable('roles', function(t) {
-    t.foreign('idCredencial')
+    t.foreign('idCredencialIngreso')
+    .references('id')
+    .on('sesion.credenciales')
+    .onDelete('RESTRICT')
+    .onUpdate('RESTRICT')
+  })
+  .alterTable('tiposSangre', function(t) {
+    t.foreign('idCredencialIngreso')
     .references('id')
     .on('sesion.credenciales')
     .onDelete('RESTRICT')
