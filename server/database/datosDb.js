@@ -5,6 +5,6 @@ module.exports =  {
                                                 host: '127.0.0.1', 
                                                 user: 'prueba', 
                                                 password: '12345678', 
-                                                database: 'knex'
+                                                database: 'Ignug'
                                             }
 }

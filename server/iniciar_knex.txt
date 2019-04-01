@@ -1,8 +1,8 @@
 
-Crear base de datos POSGRESQL
+Crear base de datos POSTGRESQL
 DESARROLLO.-
 
-1.- Crear usuario prueba
+0.- Crear usuario prueba
 1.- Crear DB con script ./database/db.sql
 2.- Crear Schemas con script ./database/db.sql
 
